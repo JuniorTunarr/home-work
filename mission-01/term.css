@@ -31,7 +31,9 @@ dd {
   background: linear-gradient(180deg, #cccccc 0%, #eeeeee 100%);
   border: 1px solid #a3a3a3;
   border-radius: 5px;
-  padding: 16px;
+  /* padding: 16px; */
+  padding: 12px 16px 16px;
+  box-sizing: border-box;
 }
 .term-list {
   width: 218px;
@@ -57,6 +59,10 @@ dd {
 }
 .term-list dd {
   font-size: 14px;
+  margin-top: 2px;
+}
+dl:last-child {
+  margin-top: -5px;
 }
 .term-list::after {
   content: "";
