@@ -1,0 +1,50 @@
+@import url(./base.css);
+@import url(./reset.css);
+
+body {
+  background: linear-gradient(180deg, #e0e0e0 0%, #ffffff 73.96%);
+}
+main {
+  background-color: #fff;
+  width: 940px;
+  height: 620px;
+  margin: 0 auto;
+  border-radius: 15px 15px 0 0;
+  padding: 28px 16px 36px;
+}
+.first__div {
+  width: 250px;
+  height: 538px;
+}
+.validation {
+  list-style: none;
+  cursor: pointer;
+  width: 250px;
+  height: 86px;
+  padding-left: 0;
+}
+
+.validation li {
+  width: inherit;
+  height: 37px;
+  box-sizing: border-box;
+  background-color: #cccccc;
+  padding: 0 8px 0 0;
+  margin: 12px 0;
+  border-radius: 34px;
+  border-width: 1px;
+  background-image: url(./images/validation_icon.png);
+  background-repeat: no-repeat;
+  background-position: 20px 10px;
+  padding-left: 45px;
+}
+
+.validation li a {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 37px;
+  text-decoration: none;
+  color: black;
+}
