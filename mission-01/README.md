@@ -61,7 +61,7 @@ div.term
 ```
 
 2. term1.html(div 미활용. only dt+dd)
-   이미지가 들은 dd / 텍스트만 이루어진 dt+dd 부분을 각각 float속성을 주고, clear 속성을 사용해서 플로팅을 해제시켰습니다.
+   이미지가 들은 dd / 텍스트만 이루어진 dt+dd로 분리하였고,각각 float속성을 주고 clear 속성을 사용해서 플로팅을 해제시켰습니다.
 
 ```
 div.term
