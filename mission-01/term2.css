@@ -1,0 +1,93 @@
+@import url(./base.css);
+@import url(./reset.css);
+
+body {
+  background: linear-gradient(180deg, #e0e0e0 0%, #ffffff 73.96%);
+}
+main {
+  background-color: #fff;
+  width: 940px;
+  height: 620px;
+  margin: 0 auto;
+  border-radius: 15px 15px 0 0;
+  padding: 28px 16px 36px;
+}
+
+dt,
+dd {
+  margin: 0;
+  font-family: "Pretendard";
+  font-style: normal;
+  line-height: 150%;
+}
+.first__div {
+  width: 250px;
+  height: 538px;
+}
+
+.term {
+  width: 250px;
+  height: 259px;
+  background: linear-gradient(180deg, #cccccc 0%, #eeeeee 100%);
+  border: 1px solid #a3a3a3;
+  border-radius: 5px;
+  padding: 12px 16px 16px;
+  box-sizing: border-box;
+}
+.term-list {
+  width: 218px;
+  /* height: 88px; */
+  position: relative;
+}
+
+/* 첫번째 dl에 대한 스타일 */
+.term-list:nth-of-type(1) dt,
+.term-list:nth-of-type(1) dd:not(.left) {
+  float: right;
+  width: 142px;
+}
+
+.term-list:nth-of-type(1) .left {
+  float: left;
+  width: 60px;
+}
+
+/* 두번째 dl에 대한 스타일 */
+.term-list:nth-of-type(2) dt,
+.term-list:nth-of-type(2) dd:not(.right) {
+  float: left;
+  width: 142px;
+}
+
+.term-list:nth-of-type(2) .right {
+  float: right;
+  width: 60px;
+}
+
+.term h1 {
+  font-weight: 700;
+  font-size: 15px;
+}
+.term-list dt {
+  font-weight: 700;
+  font-size: 14px;
+  color: #296897;
+}
+.term-list dd:not(.left):not(.right) {
+  font-size: 14px;
+  margin-top: 2px;
+}
+dl:last-child {
+  margin-top: -5px;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.term-list img {
+  height: 68px;
+  width: 60px;
+  display: inline-block;
+}
