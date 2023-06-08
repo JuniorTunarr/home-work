@@ -17,7 +17,7 @@ main {
   padding: 28px 16px 36px;
 }
 
-.loginForm__wrap {
+.login {
   width: 244px;
   height: 161px;
   background: linear-gradient(90deg, #ed552f 0%, #e8852e 100%);
@@ -34,7 +34,7 @@ main {
   color: #ffff00;
 }
 
-.loginForm {
+.loginForm__contents {
   width: 220px;
   height: 106px;
   background: #ffffff;

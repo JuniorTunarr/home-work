@@ -19,8 +19,7 @@
 ## Description
 
 - Login:
-  main 태그 내에, 폼으로 모든 요소들을 감쌌습니다.
-  main > h2 + div(fieldset과 ul)
+  section > h2 + form(fieldset과 ul)
 
   - fieldset > label(for=id) + input#id + label(for=password) + input#password + button
   - ul> li \* 2 > a  
@@ -33,11 +32,11 @@
 ```
 main
 │
-└─── form.loginForm__wrap
+└─── section.login
      │
      ├─── h2.loginForm__title
      │
-     └─── div.loginForm
+     └─── form.loginForm__contents
           │
           ├─── fieldset
           │    │
