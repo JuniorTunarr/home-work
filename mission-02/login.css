@@ -49,9 +49,10 @@ fieldset {
   height: 69px;
 }
 
-span.divider {
+hr.divider {
   width: 209px;
   height: 1px;
+  margin: 0 5px;
   background: #cccccc;
 }
 
