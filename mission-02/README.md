@@ -1,9 +1,9 @@
-## Mission-02
+# Mission-02
 
 - [Mission-02](#mission-02)
-- [General info](#general-info)
-- [Results](#results)
-- [Description](#description)
+  - [General info](#general-info)
+  - [Results](#results)
+  - [Description](#description)
 
 ## General info
 
@@ -49,7 +49,7 @@ main
           │    │
           │    └─── button.formInput__button
           │
-          ├─── span.divider
+          ├─── hr.divider
           │
           └─── ul
                │

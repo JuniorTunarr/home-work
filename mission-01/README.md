@@ -1,8 +1,9 @@
-## Mission-01
+# Mission-01
 
-- [General info](#general-info)
-- [Results](#results)
-- [Description](#description)
+- [Mission-01](#mission-01)
+  - [General info](#general-info)
+  - [Results](#results)
+  - [Description](#description)
 
 ## General info
 
