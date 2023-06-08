@@ -53,15 +53,12 @@ hr.divider {
   width: 209px;
   height: 1px;
   margin: 0 5px;
-  background: #cccccc;
-}
-
-fieldset label,
-fieldset input {
-  display: inline-block;
+  border: 0;
+  background-color: #cccccc;
 }
 
 fieldset label {
+  display: inline-block;
   width: 56px;
   height: 21px;
   line-height: 21px;
@@ -69,6 +66,7 @@ fieldset label {
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
+  padding-top: 3px;
   vertical-align: top;
 }
 
@@ -79,7 +77,7 @@ input[type="password"] {
   border: 1px solid #cccccc;
   border-radius: 5px;
   margin-left: -5px;
-  padding: 1.5px 8px;
+  padding: 6px 8px;
 }
 
 input::placeholder {
