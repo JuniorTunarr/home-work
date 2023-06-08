@@ -7,6 +7,7 @@
 body {
   background: linear-gradient(180deg, #e0e0e0 0%, #ffffff 73.96%);
 }
+
 main {
   background-color: #fff;
   width: 940px;
@@ -24,14 +25,15 @@ main {
   border-radius: 5px;
   padding: 12px;
 }
+
 .loginForm__title {
   font-family: "Pretendard";
-  font-style: normal;
   font-weight: 700;
   font-size: 15px;
   line-height: 150%;
   color: #ffff00;
 }
+
 .loginForm {
   width: 220px;
   height: 106px;
@@ -40,15 +42,22 @@ main {
   border-radius: 5px;
   position: relative;
 }
+
 fieldset {
   padding: 8px;
   width: 100%;
   height: 69px;
 }
-span {
+
+span.divider {
   width: 209px;
   height: 1px;
   background: #cccccc;
+}
+
+fieldset label,
+fieldset input {
+  display: inline-block;
 }
 
 fieldset label {
@@ -56,16 +65,12 @@ fieldset label {
   height: 21px;
   line-height: 21px;
   font-family: "Pretendard";
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
   vertical-align: top;
 }
-fieldset label,
-fieldset input {
-  display: inline-block;
-}
+
 input[type="text"],
 input[type="password"] {
   width: 90px;
@@ -75,9 +80,11 @@ input[type="password"] {
   margin-left: -5px;
   padding: 1.5px 8px;
 }
+
 input::placeholder {
   font-size: 14px;
 }
+
 label[for="password"],
 .formInput__password {
   margin-top: 5px;
@@ -101,15 +108,18 @@ label[for="password"],
   display: table;
   clear: both;
 }
+
 ul {
   width: 220px;
   height: 36px;
   padding: 8px 8px;
 }
+
 ul li {
   float: left;
   list-style: none;
 }
+
 ul li:last-child {
   margin-left: 20px;
 }
@@ -117,15 +127,8 @@ ul li:last-child {
 ul li a {
   font-size: 13px;
 }
+
 .icon--deco {
   color: #ed552f;
   font-size: 14px;
-}
-
-.divider {
-  width: 209px;
-  margin: 0 5px;
-  height: 1px;
-  display: block;
-  background: #cccccc;
 }
