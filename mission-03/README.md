@@ -13,9 +13,8 @@
 ## Results
 
 1. Transition
-   (이미지를 클릭하면 구현한 결과물 영상url로 이동합니다.)
 
-[![Transition_result](./transition_result_preview.png)](https://youtube.com/shorts/L7nfI6OVmjw)
+![Transition_result](./transition_result.gif)
 
 ## Description
 
