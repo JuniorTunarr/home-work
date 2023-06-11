@@ -1,5 +1,6 @@
 ## 멋사 프론트엔드 스쿨 6기 과제
 
+- [멋사 프론트엔드 스쿨 6기 과제](#멋사-프론트엔드-스쿨-6기-과제)
 - [General info](#general-info)
 - [Technologies](#technologies)
 - [Setup](#setup)
@@ -13,6 +14,8 @@
 ## Technologies
 
 - mission-01: html5 + css3
+- mission-02: html5 + css3
+- mission-03: html5 + css3
 
 ## Setup
 
