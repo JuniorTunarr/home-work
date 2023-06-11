@@ -142,3 +142,217 @@ a {
   color: inherit;
   text-decoration: none;
 }
+body {
+  background: linear-gradient(180deg, #e0e0e0 0%, #ffffff 73.96%);
+  font-family: "Pretendard";
+  font-style: normal;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+header {
+  width: 940px;
+  height: 138px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 0px 0px 15px 15px;
+  background-color: white;
+}
+.banner {
+  width: 940px;
+  height: 120px;
+  margin: 0 auto;
+  background: skyblue;
+}
+/* 메인 3개 div 정렬 */
+main {
+  display: flex;
+  background-color: #fff;
+  width: 58.75rem;
+  height: 38.75rem;
+  margin: 0 auto;
+  border-radius: 15px 15px 0 0;
+}
+
+.main-content1,
+.main-content2,
+.main-content3 {
+  width: 250px;
+  padding: 1.75rem 0 2.25rem;
+  /* background: #535353; */
+  display: inline-block;
+}
+.main-content1 {
+  margin: 0 1rem;
+}
+
+/* 로그인 */
+.login {
+  background: radial-gradient(circle at right top, orange, orangered);
+  box-shadow: 5px 5px 0 0 #ccc;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.login-title {
+  color: yellow;
+  font-size: 0.9375rem;
+  font-weight: 700;
+}
+/* fieldset은 가급적 스타일링하지 않을것 => div로 대체 */
+.login-form fieldset {
+  position: relative;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #aaa;
+}
+.user-id,
+.user-pw {
+  font-size: 0;
+}
+.user-pw {
+  /* background: pink; */
+  margin-top: 5px;
+}
+.login-form label {
+  /* 4em; 4글자 */
+  width: 56px;
+  display: inline-block;
+  font-size: 14px;
+}
+.login-form input {
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  height: 24px;
+  padding: 1px 1px 1px 5px;
+  width: 90px;
+  box-sizing: border-box;
+}
+.login-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 3px;
+  background: orangered;
+  color: #fff;
+  font-size: 14px;
+  /* width를 주지않으면 패딩이 필요함 */
+  padding: 0;
+  border: 0;
+  width: 50px;
+  height: 53px;
+}
+.login-form {
+  margin-top: 8px;
+  background: #fff;
+  padding: 10px 10px 0 10px;
+  border-radius: 5px;
+}
+.login-member {
+  background: #fff;
+  padding: 4px;
+  display: flow-root;
+}
+.login-member li:first-child {
+  float: left;
+}
+.login-member li:last-child {
+  float: right;
+}
+.login-member a {
+  display: block;
+  font-size: 0.8125rem;
+  padding: 6px;
+}
+
+/* 유효성 검사 */
+.validation-list {
+  /* background: yellow; */
+  margin-top: 15px;
+}
+.validation-list li {
+  margin: 10px 0;
+}
+
+/* 패딩은 a태그에 줌으로써 선택가능한 영역 넓힘 */
+.validation-list a {
+  display: block;
+  font-size: 0.875rem;
+  background: url(./../assets/validation_icon.png) no-repeat 15px 50%, #ccc;
+  /* 좌측 padding의 간격을 충분히 줘야 겹치지 않음 */
+  padding: 10px 10px 8px 37px;
+  border: 1px solid #aaa;
+  border-radius: 30px;
+}
+
+/* 웹 관련 용어 */
+.term {
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  background: #ccc;
+  padding: 16px;
+  margin-top: 15px;
+}
+
+.term-title {
+  font-size: 0.9375rem;
+  font-weight: 700;
+}
+
+.term-list {
+  margin-top: 10px;
+}
+
+.term-list-wrapper {
+  margin-top: 16px;
+  /* height가 없기에 */
+  display: flow-root;
+}
+/* float에 right를 줬지만 inline으로 width를 배정해줌으로써 위치를 조정 */
+.term-list-subject {
+  width: 142px;
+  color: #296867;
+  font-size: 0.875rem;
+  font-weight: 700;
+  /* default float */
+  float: right;
+}
+.term-list-brief {
+  font-size: 0.875rem;
+  line-height: 150%;
+}
+
+.term-list-thumbnail {
+  /* default float */
+  float: left;
+}
+.term-list-thumbnail img {
+  display: block;
+  width: 60px;
+  height: 68px;
+}
+.term-list-brief {
+  width: 142px;
+  margin-top: 5px;
+  /* default float */
+  float: right;
+}
+
+.cross .term-list-subject,
+.cross .term-list-brief {
+  float: left;
+}
+.cross .term-list-thumbnail {
+  float: right;
+}
+
+/* 푸터 */
+footer {
+  height: 135px;
+  background: linear-gradient(
+    180deg,
+    #cccccc 0%,
+    rgba(255, 255, 255, 0) 100%,
+    #ffffff 100%
+  );
+}
