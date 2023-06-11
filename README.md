@@ -1,9 +1,9 @@
-## 멋사 프론트엔드 스쿨 6기 과제 통합용
+# 멋사 프론트엔드 스쿨 6기 과제 통합용
 
 - [멋사 프론트엔드 스쿨 6기 과제 통합용](#멋사-프론트엔드-스쿨-6기-과제-통합용)
-- [General info](#general-info)
-- [Technologies](#technologies)
-- [Setup](#setup)
+  - [General info](#general-info)
+  - [Technologies](#technologies)
+  - [Setup](#setup)
 
 ## General info
 
