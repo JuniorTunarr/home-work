@@ -149,15 +149,15 @@ body {
 
 main {
   background-color: #fff;
-  width: 940px;
-  height: 620px;
+  width: 58.75rem;
+  height: 38.75rem;
   margin: 0 auto;
-  border-radius: 15px 15px 0 0;
-  padding: 28px 16px 36px;
+  border-radius: 0.9375rem 0.9375rem 0 0;
+  padding: 1.75rem 1rem 2.25rem;
   box-sizing: border-box;
 }
 .event-and-site {
-  padding: 12px;
+  padding: 0.75rem;
   background: linear-gradient(180deg, #cccccc 0%, #eeeeee 100%);
   border-radius: 5px;
   border: 1px solid #a3a3a3;
@@ -171,10 +171,10 @@ main {
   border-bottom: 1px solid #a3a3a3;
 }
 .site {
-  padding-top: 8px;
+  padding-top: 0.5rem;
 }
 .site-title {
-  font-size: 15px;
+  font-size: 0.9375rem;
   font-weight: 700;
 }
 .site-title span {
@@ -184,23 +184,23 @@ main {
   background: #ffffff;
   border: 1px solid #a3a3a3;
   border-radius: 5px;
-  margin-top: 8px;
-  height: 29px;
+  margin-top: 0.5rem;
+  height: 1.8125rem;
   overflow: hidden;
-  transition: height 0.3s cubic-bezier(0.12, 0, 0.39, 0),
-    padding-top 0.3s cubic-bezier(0.12, 0, 0.39, 0) 0.3s,
-    padding-bottom 0.3s cubic-bezier(0.12, 0, 0.39, 0) 0.3s;
+  transition: height 0.4s cubic-bezier(0.12, 0, 0.39, 0),
+    padding-top 0.3s cubic-bezier(0.12, 0, 0.39, 0) 0.4s,
+    padding-bottom 0.3s cubic-bezier(0.12, 0, 0.39, 0) 0.4s;
 }
 .site-contents:hover {
   height: 145px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .site-contents li a {
   display: block;
   width: 166px;
   height: 29px;
-  padding-left: 24px;
+  padding-left: 1.5rem;
   line-height: 29px;
 }
