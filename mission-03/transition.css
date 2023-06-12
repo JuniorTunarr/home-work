@@ -152,7 +152,7 @@ main {
   width: 58.75rem;
   height: 38.75rem;
   margin: 0 auto;
-  border-radius: 0.9375rem 0.9375rem 0 0;
+  border-radius: 15px 15px 0 0;
   padding: 1.75rem 1rem 2.25rem;
   box-sizing: border-box;
 }
@@ -177,6 +177,7 @@ main {
   font-size: 0.9375rem;
   font-weight: 700;
 }
+/* 재활용 가능한 스타일이라 클래스 모듈로 하는 것이 좋음 */
 .site-title span {
   color: #ed552f;
 }
