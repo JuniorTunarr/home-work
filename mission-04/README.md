@@ -1,21 +1,29 @@
 # Mission-04
 
+---
+
 - [Mission-04](#mission-04)
   - [General info](#general-info)
   - [Results](#results)
   - [Description](#description)
 
+---
+
 ## General info
 
 피그마로 주어진 Web Cafe 시안의 일부를 구현한 결과물.
-그 중에서 새소식(그리드) 부분입니다.
+그 중에서 새소식(그리드 활용) 부분입니다.
+
+---
 
 ## Results
 
 1. Grid
 
-![Grid_result1](./grid_result1.png)
-![Grid_result2](./grid_result2.png)
+![Grid_result1](./result1.png)
+![Grid_result2](./result2.png)
+
+---
 
 ## Description
 
@@ -24,17 +32,19 @@
 ```
 main
 └── section.news
-    ├── div.news-title-wrap
-    │   ├── div.news-title-sub-wrap
-    │   │   └── h2.news-title
-    │   └── div.news-plus
-    │       └── i.fa-sharp.fa-solid.fa-plus.fa-lg.font-deco
-    └── article.news-contents-wrap
-        ├── img.news-contents-image
-        ├── div.news-contents-image-title
-        ├── div.news-contents-subject
-        ├── div.news-contents-createdAt
-        └── div.news-contents-description
+    ├── h2.news-title
+    ├── div.news-more-wrapper
+    │   └── a.news-more
+    │       └── img
+    ├── div.divider[aria-label]
+    ├── figure.news-image
+    │   ├── img
+    │   └── figcaption
+    └── div.news-contents
+        ├── h3
+        ├── p
+        └── p
+
 
 
 
@@ -42,9 +52,56 @@ main
 
 - 마크업
 
-  - news라는 section 내부에 구분선을 기준으로 위는 news-title 관련 div, 아래는 news-contents 관련 div로 구성되어 있습니다.
-  - news-contents는 기사의 성향에 가깝다고 느껴서 article로 그룹핑하였습니다.
+  - grid container로 뉴스 섹션을 두고, 그 밑에 5개의 grid-area(title / more / divider / more / contents)로 분리하였습니다.
+  - divider div는 aria-label을 통해 스크린 리더 사용자에게 구분선이라는 정보를 제공하게끔 했습니다.
 
 - 레이아웃
-  - news-title 관련 div / news-contents 관련 div를 나눠서 grid를 적용하였습니다.
-  - grid는 공통적으로 column을 1fr단위로 12개로 나누고, gap으로 0.5rem만큼의 간격을 두었습니다. 이후 그리드 라인 번호는 정수로 지정해야 하기에, 세부적인 위치 조정은 margin이나 padding을 사용하였습니다.
+
+  - 그리드
+    - container
+      ```
+       .news{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto;
+        gap: 12px;
+        grid-template-areas:
+          "title title . . . . . . . . more more"
+          "divider divider divider divider divider divider divider divider divider . . ."
+          "image image image image contents contents contents contents contents contents contents contents";
+          }
+      ```
+    - item: area 5개
+      ```
+       .news-title {
+         grid-area: title;
+       }
+       .news-more-wrapper {
+         grid-area: more;
+       }
+       .divider {
+         grid-area: divider;
+       }
+       .news-image {
+         grid-area: image;
+       }
+       .news-contents {
+         grid-area: contents;
+       }
+      ```
+  - 기타
+
+    - 공통되는 부분은 변수로 처리해봤습니다.
+      (font-size, line-height)
+
+      ```
+      :root {
+      --main-font-size: 14px;
+      --main-line-height: 150%;
+      }
+
+      main {
+        font-size: var(--main-font-size);
+        line-height: var(--main-line-height);
+      }
+      ```

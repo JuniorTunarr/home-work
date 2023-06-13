@@ -1,149 +1,19 @@
-/* 숨김 콘텐츠 */
-.ally,
-legend {
-  background: yellow;
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip-path: polygon(0 0, 0 0, 0 0);
-  /* 이전에 사용하던 방식인데, 스크롤이 잡힌다든지, 이슈가 있음 */
-  /* top: -9999px; */
-
-  /* 요소는 잡히지만, 숨김처리하는 방식 */
-  /* visibility: hidden; */
+:root {
+  --main-font-size: 14px;
+  --main-line-height: 150%;
 }
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+* {
   margin: 0;
   padding: 0;
-  border: 0;
   font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
+  box-sizing: border-box;
 }
 body {
-  /* 영어권이라 가능 => 한글은 1로두면 ㅊ이나 ㅎ의 갓이 잘림 */
-  line-height: 1.15;
-}
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-a {
-  color: inherit;
-  text-decoration: none;
-}
-body {
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   background: linear-gradient(180deg, #e0e0e0 0%, #ffffff 73.96%);
 }
 
@@ -154,81 +24,66 @@ main {
   margin: 0 auto;
   border-radius: 15px 15px 0 0;
   padding: 1.75rem 1rem 2.25rem;
-  box-sizing: border-box;
+  font-size: var(--main-font-size);
+  line-height: var(--main-line-height);
 }
 .news {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  gap: 12px;
   margin: 0 auto;
   width: 23.75rem;
   height: 200px;
-  font-size: 0.875rem;
-}
-.news-title-wrap {
-  column-gap: 0.5rem;
-  display: grid;
-  margin: 0 auto;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 2;
-  position: relative;
-}
-.news-title-wrap::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 1.5px;
-  background: linear-gradient(90deg, #a9a9a9 -51.32%, #ffffff 80%);
-}
-.news-title-sub-wrap {
-  grid-area: 1 / 1 / 2 / 3;
-  margin-bottom: 15px;
+  grid-template-areas:
+    "title title . . . . . . . . more more"
+    "divider divider divider divider divider divider divider divider divider . . ."
+    "image image image image contents contents contents contents contents contents contents contents";
 }
 .news-title {
   color: #ed552f;
-  font-weight: 700;
-  height: 21px;
-  line-height: 21px;
-  font-size: 0.875rem;
+  grid-area: title;
 }
-.news-plus {
-  height: 22px;
-  line-height: 22px;
-  font-size: 0.875rem;
-  text-align: right;
-  grid-area: 1 / 11 / 2 / 13;
+.news-more-wrapper {
+  width: 57px;
+  grid-area: more;
 }
-.font-deco {
-  color: #447231;
+.news-more-wrapper a {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.news-contents-wrap {
-  column-gap: 0.5rem;
-  display: grid;
-  margin: 0 auto;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 8;
-  padding-top: 25px;
+.news-more-wrapper a img {
+  width: 16px;
+  height: 16px;
 }
-.news-contents-image {
-  height: 66px;
-  grid-area: 3 / 1 / 5 / 5;
+.divider {
+  width: 266px;
+  height: 1px;
+  background: linear-gradient(90deg, #a9a9a9 -1.32%, #ffffff 100%);
+  grid-area: divider;
 }
-.news-contents-image-title {
-  height: 21px;
-  grid-area: 6 / 1 / 7 / 4;
-  margin: -20px 0 0 20px;
+.news-image {
+  grid-area: image;
+  text-align: center;
+  margin-top: 12px;
 }
-.news-contents-subject {
-  height: 21px;
-  font-weight: 700;
-  grid-area: 3 / 5 / 4 / 12;
+.news-image img {
+  box-shadow: 0px 15px 15px 5px #aaaaaa;
+  display: block;
 }
-.news-contents-createdAt {
-  height: 21px;
-  grid-area: 4 / 5 / 5 / 7;
+.news-image figcaption {
+  margin-top: 12px;
 }
-.news-contents-description {
-  height: 84px;
-  grid-area: 5 / 5 / 8 /13;
+.news-contents {
+  margin-top: 12px;
+  grid-area: contents;
+}
+.news-contents p:nth-child(2) {
+  margin-top: 4px;
+}
+.news-contents p:last-child {
   text-align: justify;
-  line-height: 1.2rem;
+  margin-top: 12px;
 }
