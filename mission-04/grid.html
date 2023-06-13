@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.7/dist/web/variable/pretendardvariable-dynamic-subset.css"
+    />
     <script
       src="https://kit.fontawesome.com/d9ca93f00c.js"
       crossorigin="anonymous"
@@ -15,19 +21,19 @@
     <main>
       <section class="news">
         <h2 class="news-title">새소식</h2>
-        <div class="news-more-wrapper">
+        <div class="news-more-wrapper" role="button">
           <a class="news-more"
             ><img src="./images/Union.png" alt="더하기 기호 이미지" />더보기</a
           >
         </div>
         <div class="divider" aria-label="구분선"></div>
-        <figure class="news-image">
+        <figure class="news-image" role="img">
           <img src="./images/news.gif" alt="뉴스 썸네일" />
           <figcaption>W3C 리뉴얼</figcaption>
         </figure>
-        <div class="news-contents">
+        <div class="news-contents" role="main">
           <h3>W3C 사이트가 리뉴얼 되었습니다.</h3>
-          <p>2022.07.18</p>
+          <p aria-label="발행일">2022.07.18</p>
           <p>
             디자인 및 다양한 view 환경을 고려하여 구성되어 있으며, 기존보다 최신
             정보 및 개발자를 위한 기술 가이드도 찾기 쉽도록 구성되어 있습니다.

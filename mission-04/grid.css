@@ -70,7 +70,7 @@ main {
   margin-top: 12px;
 }
 .news-image img {
-  box-shadow: 0px 15px 15px 5px #aaaaaa;
+  box-shadow: 0px 15px 15px 3px #aaaaaa;
   display: block;
 }
 .news-image figcaption {

@@ -53,7 +53,35 @@ main
 - 마크업
 
   - grid container로 뉴스 섹션을 두고, 그 밑에 5개의 grid-area(title / more / divider / more / contents)로 분리하였습니다.
-  - divider div는 aria-label을 통해 스크린 리더 사용자에게 구분선이라는 정보를 제공하게끔 했습니다.
+  - 웹 접근성 측면(스크린 리더를 위한 접근성 개선 요소)
+    - "더보기"를 감싸는 div에 role="button"을 적용하였습니다.
+    - divider div에 aria-label로 구분선임을 표시하였습니다.
+    - figure 태그에 role="img"을 적용하였습니다.
+    - contents div에 role="main"을 적용하였습니다.
+    - contents의 날짜가 들어가는 숫자부분은 aria-label로 발행일임을 표시하였습니다.
+    ```
+      <section class="news">
+        <h2 class="news-title">새소식</h2>
+        <div class="news-more-wrapper" role="button">
+          <a class="news-more"
+            ><img src="./images/Union.png" alt="더하기 기호 이미지" />더보기</a
+          >
+        </div>
+        <div class="divider" aria-label="구분선"></div>
+        <figure class="news-image" role="img">
+          <img src="./images/news.gif" alt="뉴스 썸네일" />
+          <figcaption>W3C 리뉴얼</figcaption>
+        </figure>
+        <div class="news-contents" role="main">
+          <h3>W3C 사이트가 리뉴얼 되었습니다.</h3>
+          <p aria-label="발행일">2022.07.18</p>
+          <p>
+            디자인 및 다양한 view 환경을 고려하여 구성되어 있으며, 기존보다 최신
+            정보 및 개발자를 위한 기술 가이드도 찾기 쉽도록 구성되어 있습니다.
+          </p>
+        </div>
+      </section>
+    ```
 
 - 레이아웃
 
