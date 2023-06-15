@@ -73,7 +73,6 @@ main {
   height: 13px;
   font-weight: 400;
   font-size: 13px;
-  line-height: 150%;
   background: #a3a3a3;
   padding: 2px;
   border-radius: 5px;
@@ -100,10 +99,10 @@ main {
   background-position: 0 -45px;
 }
 .spriteCZG:after {
-  background-position: 0 -23px;
+  background-position: 0 0;
 }
 .spriteMDN:after {
-  background-position: 0 0;
+  background-position: 0 -23px;
 }
 .favorite-more {
   position: absolute;

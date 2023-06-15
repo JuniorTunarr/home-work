@@ -157,10 +157,10 @@ main
     .spriteWS:after {
       background-position: 0 -45px;
     }
-    .spriteCZG:after {
-      background-position: 0 -23px;
+      .spriteCZG:after {
+      background-position: 0 0;
     }
     .spriteMDN:after {
-      background-position: 0 0;
+      background-position: 0 -23px;
     }
     ```
